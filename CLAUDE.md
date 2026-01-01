@@ -12,16 +12,22 @@ YOMAN (Your Operation MANager)은 SampleRNN의 계층적 시간 스케일 개념
 YOMAN/
 ├── docs/
 │   ├── YOMAN-PROJECT-OVERVIEW.md    # 프로젝트 총 요약
+│   ├── archive/                      # 원본 아이디어 아카이브
+│   │   └── original-ideas/           # idea.txt, idea2.txt, idea3.txt
 │   ├── research/                     # 연구 문서
-│   │   └── 251231-1500-yoman-paper/  # 학술 논문 형식
+│   │   ├── 251231-1500-yoman-paper/  # 학술 논문 형식
+│   │   ├── 260101-async-system-temporal-gap/
+│   │   ├── 260101-causal-consistency-models/
+│   │   ├── 260101-causal-vs-non-causal-llm/
+│   │   ├── 260101-event-sourcing-cqrs-causality/
+│   │   ├── 260101-hierarchical-temporal-models/
+│   │   ├── 260101-human-ai-async-interface-patterns/
+│   │   └── 260101-temporal-perception-interface-design/
 │   └── study/                        # 학습 자료 (4개 폴더)
 │       ├── 251228-1815-autocoder-to-skim-stone/
 │       ├── 251231-1430-stone-skim-philosophy/
 │       ├── 251231-1800-yoman-architecture/
 │       └── microservices-for-project-management/
-├── idea.txt                          # UnitService 핵심 아이디어
-├── idea2.txt                         # 멀티모달 인터페이스 비전
-├── idea3.txt                         # Causal System 문제 정의
 ├── sampleRNN.pdf                     # 영감 논문 (ICLR 2017)
 └── .env                              # API 키 (Notion, Gemini)
 ```
@@ -54,9 +60,14 @@ Tier 1: Flash/GLM (Unit) - 단일 함수/클래스
 **Phase**: 철학 정립 및 문서화 (설계 단계)
 
 **완료**:
-- 핵심 개념 정립 (idea.txt, idea2.txt, idea3.txt)
+- 핵심 개념 정립 (idea.txt, idea2.txt, idea3.txt → archive로 이동)
 - 학습 자료 37개 문서 작성
 - 학술 논문 형식 문서 (yoman-paper.md)
+- 추가 연구 문서 7개 폴더 (260101-* 시리즈)
+  - Causal vs Non-Causal LLM 분석
+  - Hierarchical Temporal Models
+  - Human-AI Async Interface Patterns
+  - Event Sourcing + CQRS + Causality
 
 **진행 중**:
 - 프로토타입 구현 준비
@@ -68,8 +79,9 @@ Tier 1: Flash/GLM (Unit) - 단일 함수/클래스
 | `docs/YOMAN-PROJECT-OVERVIEW.md` | 전체 프로젝트 요약 (590줄) |
 | `docs/research/251231-1500-yoman-paper/00-yoman-paper.md` | 학술 논문 형식 |
 | `docs/study/251231-1800-yoman-architecture/` | 아키텍처 완벽 가이드 |
-| `idea.txt` | UnitService 원본 아이디어 |
-| `idea2.txt` | 멀티모달 인터페이스 비전 |
+| `docs/archive/original-ideas/` | 원본 아이디어 (idea.txt, idea2.txt, idea3.txt) |
+| `docs/research/260101-causal-vs-non-causal-llm/` | Causal 시스템 연구 |
+| `docs/research/260101-hierarchical-temporal-models/` | 계층적 시간 모델 |
 
 ## Development Guidelines
 
@@ -97,4 +109,5 @@ observations: 실시간 컨텍스트
 - **Gemini API**: 빠른 모델 (Unit 레벨)
 - **Claude API**: 중상위 모델 (Module/System)
 
+<!-- Updated: 2026-01-01 - Add 7 new research folders, restructure project with archive -->
 <!-- Updated: 2026-01-01 - Initial CLAUDE.md creation -->

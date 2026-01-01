@@ -1,0 +1,9 @@
+casual system vs non causal system
+
+지금 얘기하는걸로 보면 이것은 명백히 casual system임. 
+
+하지만 리뷰어의 개념이 들어가면 non casual system이 될 수 있는건지??
+
+모르겠음.
+
+non casual system으로 어떻게 신뢰도를 높일 수 있을지?
